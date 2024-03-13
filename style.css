@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: sans-serif;
+    background:linear-gradient(#200016,#10001f) ;
+    height: 100vh;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+header {
+
+    z-index: 999;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin:30px auto;
+}
+
+header .logo {
+    color: white;
+    font-size: 25px;
+    transition: 0.4s;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+header .logo:hover {
+    letter-spacing: 2px;
+    color: mediumvioletred;
+}
+
+header ul {
+    display: flex;
+    padding: 10px;
+}
+
+header ul li {
+    margin-right: 20px;
+    font-size: 20px;
+
+}
+
+header ul li a {
+    padding: 10px;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+
+ul li a:hover {
+    background-color: mediumvioletred;
+}
+.active {
+    background-color: mediumvioletred;
+
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    background: linear-gradient(to top,#200016, transparent);
+
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+
+
+#moon {
+    mix-blend-mode: screen;
+    transform: translateY(70px);
+
+
+}
+
+.ben-shaheen{
+    color: white;
+    font-size: 0px;
+    transform: translateY(-100px);
+}
+
+.content {
+    padding: 30px;
+    color: white;
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+.content h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
